@@ -1,0 +1,86 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --background: 0 0% 8%; /* Negro/Gris oscuro */
+  --foreground: 0 0% 98%; /* Blanco */
+  --card: 0 0% 12%; /* Gris oscuro */
+  --card-foreground: 0 0% 95%; /* Blanco grisaceo */
+  --popover: 0 0% 10%; /* Gris oscuro */
+  --popover-foreground: 0 0% 95%; /* Blanco grisaceo */
+  --primary: 0 72% 51%; /* Rojo */
+  --primary-foreground: 0 0% 98%; /* Blanco */
+  --secondary: 0 0% 40%; /* Gris medio */
+  --secondary-foreground: 0 0% 98%; /* Blanco */
+  --muted: 0 0% 25%; /* Gris */
+  --muted-foreground: 0 0% 60%; /* Gris claro */
+  --accent: 0 60% 50%; /* Rojo acento */
+  --accent-foreground: 0 0% 98%; /* Blanco */
+  --destructive: 0 62.8% 30.6%; /* Rojo oscuro para destructive */
+  --destructive-foreground: 0 0% 98%; /* Blanco */
+  --border: 0 0% 20%; /* Gris para bordes */
+  --input: 0 0% 15%; /* Gris oscuro para inputs */
+  --ring: 0 72% 51%; /* Rojo para focus ring */
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: linear-gradient(135deg, hsl(var(--background)) 0%, hsl(0, 0%, 10%) 50%, hsl(var(--background)) 100%);
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+  min-height: 100vh;
+}
+
+.crypto-gradient {
+  background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--accent)) 50%, hsl(0, 0%, 20%) 100%);
+}
+
+.glass-effect {
+  background: rgba(30, 30, 30, 0.5); /* Gris oscuro translucido */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Borde blanco muy sutil */
+}
+
+.neon-glow {
+  box-shadow: 0 0 20px hsla(var(--primary), 0.3);
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.crypto-card {
+  background: linear-gradient(135deg, hsla(var(--primary), 0.1) 0%, hsla(0, 0%, 50%, 0.1) 100%);
+  border: 1px solid hsla(var(--primary), 0.2);
+  transition: all 0.3s ease;
+}
+
+.crypto-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px hsla(var(--primary), 0.2);
+}
+
+.floating-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); } /* Reducido para ser más sutil */
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-glow {
+  from { box-shadow: 0 0 20px hsla(var(--primary), 0.3); }
+  to { box-shadow: 0 0 30px hsla(var(--primary), 0.6); }
+}
