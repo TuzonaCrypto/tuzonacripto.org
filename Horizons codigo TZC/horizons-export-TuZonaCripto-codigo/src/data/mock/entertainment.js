@@ -1,0 +1,53 @@
+export const entertainment = [
+  {
+    id: 33,
+    name: "Neon Club Valencia",
+    category: "Discoteca",
+    description: "La mejor rumba de la ciudad con los mejores DJs. Paga tus tragos y entrada con cripto.",
+    address: "El Viñedo, Valencia",
+    coordinates: { lat: 10.2183, lng: -68.0019 },
+    phone: "+58 241-555-3103",
+    hours: "10:00 PM - 5:00 AM (Jue-Sáb)",
+    rating: 4.5,
+    reviews: 250,
+    acceptedCryptos: ["USDT", "Dash", "Litecoin"],
+    plan: "Básico",
+    verified: true,
+    images: ["https://images.unsplash.com/photo-1630395822701-565a7c69d344"],
+    owner: "Ricardo DJ"
+  },
+  {
+    id: 43,
+    name: "Discoteca La Cripta del Baile",
+    category: "Discoteca",
+    description: "Música retro y actual en el mejor ambiente de la ciudad. Paga con cripto y baila toda la noche.",
+    address: "Calle Carabobo, Maracaibo",
+    coordinates: { lat: 10.6433, lng: -71.6083 },
+    phone: "+58 261-555-3113",
+    hours: "9:00 PM - 4:00 AM (Vie-Sáb)",
+    rating: 4.4,
+    reviews: 150,
+    acceptedCryptos: ["Bitcoin", "Litecoin"],
+    plan: "Básico",
+    verified: true,
+    images: ["https://images.unsplash.com/photo-1699818716377-5ad5087fabf9"],
+    owner: "El Dueño de la Noche"
+  },
+  {
+    id: 53,
+    name: "AfterOffice Cripto Lounge",
+    category: "Discoteca",
+    description: "Bar y lounge para relajarse después del trabajo. Cócteles y buena música, aceptamos cripto.",
+    address: "El Rosal, Caracas",
+    coordinates: { lat: 10.4958, lng: -66.8608 },
+    phone: "+58 212-555-3123",
+    hours: "5:00 PM - 2:00 AM",
+    rating: 4.6,
+    reviews: 180,
+    acceptedCryptos: ["USDT", "Litecoin"],
+    plan: "Básico",
+    verified: true,
+    images: ["https://images.unsplash.com/photo-1578241562511-1a3e20b2b5db"],
+    owner: "The Lounge Group"
+  }
+];
